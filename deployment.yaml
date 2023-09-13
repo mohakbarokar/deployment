@@ -13,7 +13,7 @@ spec:
                 app: hello-world
         spec:
             containers:
-                — name: hello-world-container
+                  name: hello-world-container
                   image: docker.io/library/hello-world:latest
                   ports:
                     — containerPort: 3000
