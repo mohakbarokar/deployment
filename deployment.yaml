@@ -1,19 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: hello-world-deployment
+  name: hello-world
 spec:
-    replicas: 1
-    selector:
-        matchLabels:
-            app: hello-world
-    template:
-        metadata:
-            labels:
-                app: hello-world
-        spec:
-            containers:
-                  name: hello-world-container
-                  image: docker.io/library/hello-world:latest
-                  ports:
-                    — containerPort: 3000
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world-pod
+        image: docker.io/library/hello-world:latest
+        ports: 
+        - containerPort: 3000
