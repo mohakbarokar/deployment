@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: docker.io/library/hello-world:latest
+        image: karthequian/helloworld:latest
         ports:
         - containerPort: 80
         resources:
