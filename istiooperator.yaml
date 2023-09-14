@@ -10,6 +10,6 @@ spec:
           serviceAnnotations:
             service.beta.kubernetes.io/azure-load-balancer-internal: "true"
             service.beta.kubernetes.io/azure-pls-create: "true"
-            service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "JHHDevOpsTerra-lb-subnet"
+            service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "lb-subnet"
           service:
             loadBalancerIP: 10.161.186.58 # Internal Load balancer IP from AKS-SNET
