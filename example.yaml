@@ -15,7 +15,7 @@ spec:
       uri: /
     route:
     - destination:
-        host: hello.jio-bhaaratai-covid.svc.cluster.local
+        host: hello-world.default.svc.cluster.local
         # subset: v1
         port:
           number: 80
