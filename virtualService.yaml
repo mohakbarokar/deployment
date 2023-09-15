@@ -10,12 +10,23 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /
+        prefix: /helloworld/
     rewrite:
       uri: /
     route:
     - destination:
         host: hello-world.default.svc.cluster.local
+        # subset: v1
+        port:
+          number: 80
+  - match:
+    - uri:
+        prefix: /automation/
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: automation-spring-boot.default.svc.cluster.local
         # subset: v1
         port:
           number: 80
