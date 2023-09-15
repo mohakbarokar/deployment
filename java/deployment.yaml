@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world-java-deployment
+  name: automation-spring-boot
   labels:
-    app: hello-world-java
+    app: automation-spring-boot
 spec:
   selector:
     matchLabels:
-      app: hello-world-java
+      app: automation-spring-boot
   replicas: 2
   template:
     metadata:
       labels:
-        app: hello-world-java
+        app: automation-spring-boot
     spec:
       containers:
-      - name: hello-world-java
-        image: rhhdevacr.azurecr.io/jioent/health/java_jdk8/test-image:latest
+      - name: automation-spring-boot
+        image: rhhdevacr.azurecr.io/jioent/health/automation-spring-boot:sit-20230802.1
         ports:
         - containerPort: 80
         resources:
