@@ -19,14 +19,3 @@ spec:
         # subset: v1
         port:
           number: 80
-  - match:
-    - uri:
-        prefix: /automation/
-    rewrite:
-      uri: /
-    route:
-    - destination:
-        host: automation-spring-boot.default.svc.cluster.local
-        # subset: v1
-        port:
-          number: 80
