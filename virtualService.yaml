@@ -19,3 +19,14 @@ spec:
         # subset: v1
         port:
           number: 80
+  - match:
+    - uri:
+        prefix: /helloworldjava/
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: hello-world-java.default.svc.cluster.local
+        # subset: v1
+        port:
+          number: 80
