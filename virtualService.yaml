@@ -10,7 +10,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /helloworld/
+        prefix: /
     rewrite:
       uri: /
     route:
