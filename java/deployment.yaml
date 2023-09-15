@@ -18,7 +18,7 @@ spec:
       - name: automation-spring-boot
         image: rhhdevacr.azurecr.io/jioent/health/automation-spring-boot:sit-20230802.1
         ports:
-        - containerPort: 80
+        - containerPort: 8084
         resources:
           limits:
             memory: 256Mi
