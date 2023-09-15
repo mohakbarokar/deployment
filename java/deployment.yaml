@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-java-deployment
+  labels:
+    app: hello-world-java
+spec:
+  selector:
+    matchLabels:
+      app: hello-world-java
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world-java
+    spec:
+      containers:
+      - name: hello-world-java
+        image: rhhdevacr.azurecr.io/jioent/health/java_jdk8/test-image:latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: 256Mi
+            cpu: "250m"
+          requests:
+            memory: 128Mi
+            cpu: "80m"
