@@ -21,12 +21,12 @@ spec:
           number: 80
   - match:
     - uri:
-        prefix: /helloworldjava/
+        prefix: /automation/
     rewrite:
       uri: /
     route:
     - destination:
-        host: hello-world-java.default.svc.cluster.local
+        host: automation-spring-boot.default.svc.cluster.local
         # subset: v1
         port:
           number: 80
