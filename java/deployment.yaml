@@ -26,3 +26,5 @@ spec:
           requests:
             memory: 128Mi
             cpu: "80m"
+      imagePullSecrets:
+      - name: acr-repo
