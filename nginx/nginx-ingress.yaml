@@ -12,9 +12,9 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: /rfh-kafka-publisher(/|$)(.*)
+            path: /helloworld(/|$)(.*)
             backend:
               service:
-                name: rfh-kafka-publisher
+                name: helloworld
                 port:
                   number: 80
