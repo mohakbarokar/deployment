@@ -272,6 +272,7 @@ metadata:
   namespace: ingress-nginx
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+    service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "lb-subnet"
 spec:
   type: LoadBalancer
   loadBalancerIP: 10.161.99.58
