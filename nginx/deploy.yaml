@@ -274,6 +274,7 @@ metadata:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
   type: LoadBalancer
+  loadBalancerIP: 10.161.99.58
   externalTrafficPolicy: Local
   ports:
     - name: http
