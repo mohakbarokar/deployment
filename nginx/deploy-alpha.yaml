@@ -275,7 +275,7 @@ metadata:
     service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "jhhdevopsterra-aks-subnet"
 spec:
   type: LoadBalancer
-  loadBalancerIP: 10.161.99.138
+  loadBalancerIP: 10.161.99.251
   externalTrafficPolicy: Local
   ports:
     - name: http
